@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <title>The Bricks</title>
+    <script src="js/java.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="drawIt()">
+    <div id="naslov">The Bricks</div>
+    <div id="navodilo">ZA PRIČETEK IGRE PRITISNITE PUŠČICO NAVZGOR</div>
+    <div id="glavni">
+        <canvas id="igra" width="900" height="550"></canvas>
+        <p id="p"></p>
+        <p id="cas">Č a s: 00:00</p>
+        <div id="gameover"></div>
+        <button id="reset" onclick="(new drawIt()).reset()">RESET</button>
+    </div>
+    <div id="dosezki">
+        <p id="x">N a j b o l j š i  d o s e ž e k:</p>
+        <p id="storage"></p>
+    </div>
+    <canvas id="lifeCan"></canvas>
+    <img id="life" src="images/srce.png">
+    <img id="kamen" src="images/kamen.jpg">
+</body>
+
+<footer>Izdelal: Jan Makuc, 4.Ra</footer>
+
+</html>
